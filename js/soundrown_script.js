@@ -206,7 +206,7 @@ $(document).ready(function() {
 
 //RANDOM BUTTON
   $('#random').click(function() {
-    var links = $('.ocarousel_window_slides > div');
+    var links = $('.sound-button');
     var randomNum = Math.floor(Math.random()*links.length);
     if ( randomNum > 4 ) {
       $('#soundscroll-right').click();
@@ -720,7 +720,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             $('#coffee').click(function() {
               sound.togglePause();
               $(this).toggleClass('iconactive');
-              $('.icon', this).toggleClass('iconactive');
+              $('.sound-button', this).toggleClass('iconactive');
             });
 
             $("#coffee-volume").slider({
@@ -740,7 +740,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             $('#rain').click(function() {
               sound.togglePause();
               $(this).toggleClass('iconactive');
-              $('.icon', this).toggleClass('iconactive');
+              $('.sound-button', this).toggleClass('iconactive');
             });
 
             $("#rain-volume").slider({
@@ -760,7 +760,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             $('#waves').click(function() {
               sound.togglePause();
               $(this).toggleClass('iconactive');
-              $('.icon', this).toggleClass('iconactive');
+              $('.sound-button', this).toggleClass('iconactive');
             });
 
             $("#waves-volume").slider({
@@ -780,7 +780,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             $('#fire').click(function() {
               sound.togglePause();
               $(this).toggleClass('iconactive');
-              $('.icon', this).toggleClass('iconactive');
+              $('.sound-button', this).toggleClass('iconactive');
             });
 
             $("#fire-volume").slider({
@@ -800,7 +800,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             $('#bird').click(function() {
               sound.togglePause();
               $(this).toggleClass('iconactive');
-              $('.icon', this).toggleClass('iconactive');
+              $('.sound-button', this).toggleClass('iconactive');
             });
 
             $("#bird-volume").slider({
@@ -820,7 +820,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             $('#night').click(function() {
               sound.togglePause();
               $(this).toggleClass('iconactive');
-              $('.icon', this).toggleClass('iconactive');
+              $('.sound-button', this).toggleClass('iconactive');
             });
 
             $("#night-volume").slider({
@@ -840,7 +840,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             $('#train').click(function() {
               sound.togglePause();
               $(this).toggleClass('iconactive');
-              $('.icon', this).toggleClass('iconactive');
+              $('.sound-button', this).toggleClass('iconactive');
             });
 
             $("#train-volume").slider({
@@ -860,7 +860,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             $('#fountain').click(function() {
               sound.togglePause();
               $(this).toggleClass('iconactive');
-              $('.icon', this).toggleClass('iconactive');
+              $('.sound-button', this).toggleClass('iconactive');
             });
 
             $("#fountain-volume").slider({
@@ -880,7 +880,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             $('#whitenoise').click(function() {
               sound.togglePause();
               $(this).toggleClass('iconactive');
-              $('.icon', this).toggleClass('iconactive');
+              $('.sound-button', this).toggleClass('iconactive');
             });
 
             $("#whitenoise-volume").slider({
@@ -900,7 +900,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             $('#playground').click(function() {
               sound.togglePause();
               $(this).toggleClass('iconactive');
-              $('.icon', this).toggleClass('iconactive');
+              $('.sound-button', this).toggleClass('iconactive');
             });
 
             $("#playground-volume").slider({
