@@ -147,7 +147,7 @@ $(document).ready(function() {
       $('.ocarousel, #navcontainer, #mute, #soundcloud-player').removeClass('idle');
     }
 
-    if ($('.ocarousel_window_slides > div').hasClass('iconactive') && $('.ocarousel').is(':hover') == false && $('#navcontainer').is(':hover') == false && $('#mute').is(':hover') == false && $('#soundcloud-player').is(':hover') == false ) {
+    if ($('.ocarousel_window_slides .wrapper > div').hasClass('iconactive') && $('.ocarousel').is(':hover') == false && $('#navcontainer').is(':hover') == false && $('#mute').is(':hover') == false && $('#soundcloud-player').is(':hover') == false ) {
 
       idleState = false;
 
