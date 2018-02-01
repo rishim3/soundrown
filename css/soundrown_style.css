@@ -87,15 +87,16 @@
     }
       #splash div {
         position: absolute;
-        top: 0; right: 0; bottom: 0; left: 0;
+        top: 50%;
+        width: 100%;
         margin: auto;
-        width: 50%;
-        height: 20%;
+        transform: translateY(-50%);
       }
       #splash span {
         overflow: hidden;
         display: block;
         height: 48px;
+        margin-bottom: 40px;
       }
         #splash p {
           display: block;
@@ -198,9 +199,10 @@
     }
       #ui-frame {
         position: absolute;
-        height: 40%;
         margin: auto;
-        top: 0; right: 0; bottom: 0; left: 0;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-75%);
       }
   /* END UI CONTAINER */
 
@@ -1007,14 +1009,6 @@
     -webkit-transition: opacity 2s ease;
   }
 /* END EFFECTS */
-
-/* RESPONSIVE */
-@media screen and (max-height: 815px) {
-  #ui-frame {
-    height: 70%;
-  }
-}
-/* END RESPONSIVE */
 
 /* SOUND VOLUME CONTROLS */
   .sound-volume {
