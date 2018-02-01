@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Tiny//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd">
-<svg version="1.1" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" width="55px" height="55px" viewBox="0 0 55 55" xml:space="preserve">
-<g id="Layer_1" display="none">
-	<image display="inline" width="55" height="55" xlink:href="../Site/icon/coffeeshop_55x55.png" >
-	</image>
-</g>
-<g id="Layer_4" display="none">
-	<image display="inline" width="55" height="55" xlink:href="../Site/icon/waves_55x55.png" >
-	</image>
-</g>
-<g id="Layer_5">
-	<polyline fill="none" stroke="#000000" stroke-width="2.2536" stroke-miterlimit="10" points="4.542,31.301 9.125,31.301 
-		12.438,25.71 18.313,42.585 22.875,15.21 27.5,38.71 32.25,24.377 36.41,35.166 41,18.21 45.209,31.505 50.459,31.505 	"/>
-</g>
-</svg>
+<svg baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="55" height="55"><path fill="none" stroke="#000" stroke-width="2.254" stroke-miterlimit="10" d="M4.542 31.301h4.583l3.313-5.591 5.875 16.875 4.562-27.375 4.625 23.5 4.75-14.333 4.16 10.789L41 18.21l4.209 13.295h5.25"/></svg>
