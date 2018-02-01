@@ -23,12 +23,12 @@ $(document).ready(function() {
           $('#bg').css('background-image', 'url("' + this.soundBG + '")');
           _gaq.push(['_trackEvent', 'Sounds', 'Play', this.sound]);
           $(this.soundID).find('.pauseicon').css('z-index', '1');
-          $(this.soundID).find('.sound-volume').show();
+          $(this.soundID).next().find('.sound-volume').show();
         }
         else {
           _gaq.push(['_trackEvent', 'Sounds', 'Pause', this.sound]);
           $(this.soundID).find('.pauseicon').css('z-index', '-1');
-          $(this.soundID).find('.sound-volume').hide();
+          $(this.soundID).next().find('.sound-volume').hide();
         }
         return false;
       }
