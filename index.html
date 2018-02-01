@@ -2,488 +2,488 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
-	<head>
-	
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="Description" content="Ambient sounds to help you relax, focus, and escape." />
-		<meta name="keywords" content="rain, ambient, train, coffee, waves, sounds, relax, focus, binaural, fountain, playground, white noise, night" />
-		<meta name="viewport" content="width=device-width,initial-scale=1" />
-	
-		<title>soundrown</title>
-		<link href='https://fonts.googleapis.com/css?family=Gudea' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/soundrown_style.css?d2014.02.09" />
-		
-	</head>
-	
-	<body ondragstart="return false;" ondrop="return false;">	
-	
-		<!-- Splash Screen -->
-		<div id="splash">
-			<div>
-				<span><p id="splashlogo">SOUNDROWN</p></span>
-				<br><br><br><br><br>
-				<p id="splashtext">relax. focus. escape.</p>
-			</div>
-		</div>
-		
-		<!-- Background -->
-		<div id="bg">
-			<div id="bgfilter"></div>
-		</div>
-		
-		<!-- Main Logo -->
-		<div id="mainlogo"><img src="icon/logo_soundrown.svg" alt="SOUNDROWN" /></div>
-		
-		<!-- Sounds Bar -->
-		<div id="ui-container">
-			<div id="ui-frame">
-			
-				<!-- Mute Button -->
-				<div id="mute-frame"><div id="mute"><img src="icon/icon_mute.svg"><span>Mute</span></div></div>
-				
-				<div class="ocarousel" data-ocarousel-wrapearly="4" data-ocarousel-period="Infinity" data-ocarousel-perscroll="5">
-				
-					<!-- Left Scroll Button -->
-					<a href="#" data-ocarousel-link="0" class="soundscroll" id="soundscroll-left"><img src="icon/icon_left.svg" alt="Left" /></a>
-					
-					<div class="ocarousel_window">
-						<!-- Coffee -->
-						<div id="coffee">
-							<div class="icon">
-								<img class="imgdrop" src="icon/icon_coffee.svg" alt="Coffee" />
-								<img class="imgdrop pauseicon" src="icon/icon_pause.svg" alt="Pause" />
-								<p class="sound">COFFEE SHOP</p>
-							</div>
-							<div class="wrapper">
-								<div class="sound-volume">
-									<img src="icon/icon_sound_blue.svg" height="16px" width="16px" alt="Volume">
-									
-									<div class="sound-volume_bg"></div>
-									<div class="sound-volume_slider" id="coffee-volume"></div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Rain -->
-						<div id="rain">
-							<div class="icon">
-								<img class="imgdrop" src="icon/icon_rain.svg" alt="Rain" />
-								<img class="imgdrop pauseicon" src="icon/icon_pause.svg" alt="Pause" />
-								<p class="sound">RAIN</p>
-							</div>
-							<div class="wrapper">
-								<div class="sound-volume">
-									<img src="icon/icon_sound_blue.svg" height="16px" width="16px" alt="Volume">
-									
-									<div class="sound-volume_bg"></div>
-									<div class="sound-volume_slider" id="rain-volume"></div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Waves -->
-						<div id="waves">
-							<div class="icon">
-								<img class="imgdrop" src="icon/icon_waves.svg" alt="Waves" />
-								<img class="imgdrop pauseicon" src="icon/icon_pause.svg" alt="Pause" />
-								<p class="sound">WAVES</p>
-							</div>
-							<div class="wrapper">
-								<div class="sound-volume">
-									<img src="icon/icon_sound_blue.svg" height="16px" width="16px" alt="Volume">
-									
-									<div class="sound-volume_bg"></div>
-									<div class="sound-volume_slider" id="waves-volume"></div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Fire -->
-						<div id="fire">
-							<div class="icon">
-								<img class="imgdrop" src="icon/icon_fire.svg" alt="Fire" />
-								<img class="imgdrop pauseicon" src="icon/icon_pause.svg" alt="Pause" />
-								<p class="sound">FIRE</p>
-							</div>
-							<div class="wrapper">
-								<div class="sound-volume">
-									<img src="icon/icon_sound_blue.svg" height="16px" width="16px" alt="Volume">
-									
-									<div class="sound-volume_bg"></div>
-									<div class="sound-volume_slider" id="fire-volume"></div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Birds -->
-						<div id="bird">
-							<div class="icon">
-								<img class="imgdrop" src="icon/icon_bird.svg" alt="Birds" />
-								<img class="imgdrop pauseicon" src="icon/icon_pause.svg" alt="Pause" />
-								<p class="sound">BIRDS</p>
-							</div>
-							<div class="wrapper">
-								<div class="sound-volume">
-									<img src="icon/icon_sound_blue.svg" height="16px" width="16px" alt="Volume">
-									
-									<div class="sound-volume_bg"></div>
-									<div class="sound-volume_slider" id="bird-volume"></div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Night -->
-						<div id="night">
-							<div class="icon">
-								<img class="imgdrop" src="icon/icon_night.svg" alt="Night" />
-								<img class="imgdrop pauseicon" src="icon/icon_pause.svg" alt="Pause" />
-								<p class="sound">NIGHT</p>
-							</div>
-							<div class="wrapper">
-								<div class="sound-volume">
-									<img src="icon/icon_sound_blue.svg" height="16px" width="16px" alt="Volume">
-									
-									<div class="sound-volume_bg"></div>
-									<div class="sound-volume_slider" id="night-volume"></div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Train -->
-						<div id="train">
-							<div class="icon">
-								<img class="imgdrop" src="icon/icon_train.svg" alt="Train" />
-								<img class="imgdrop pauseicon" src="icon/icon_pause.svg" alt="Pause" />
-								<p class="sound">TRAIN</p>
-							</div>
-							<div class="wrapper">
-								<div class="sound-volume">
-									<img src="icon/icon_sound_blue.svg" height="16px" width="16px" alt="Volume">
-									
-									<div class="sound-volume_bg"></div>
-									<div class="sound-volume_slider" id="train-volume"></div>
-								</div>
-							</div>
-						</div>				
-						
-						<!-- Fountain -->
-						<div id="fountain">
-							<div class="icon">
-								<img class="imgdrop" src="icon/icon_fountain.svg" alt="Fountain" />
-								<img class="imgdrop pauseicon" src="icon/icon_pause.svg" alt="Pause" />
-								<p class="sound">FOUNTAIN</p>
-							</div>
-							<div class="wrapper">
-								<div class="sound-volume">
-									<img src="icon/icon_sound_blue.svg" height="16px" width="16px" alt="Volume">
-									
-									<div class="sound-volume_bg"></div>
-									<div class="sound-volume_slider" id="fountain-volume"></div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- White Noise -->
-						<div id="whitenoise">
-							<div class="icon">
-								<img class="imgdrop" src="icon/icon_whitenoise.svg" alt="White Noise" />
-								<img class="imgdrop pauseicon" src="icon/icon_pause.svg" alt="Pause" />
-								<p class="sound">WHITE NOISE</p>
-							</div>
-							<div class="wrapper">
-								<div class="sound-volume">
-									<img src="icon/icon_sound_blue.svg" height="16px" width="16px" alt="Volume">
-									
-									<div class="sound-volume_bg"></div>
-									<div class="sound-volume_slider" id="whitenoise-volume"></div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Playground -->
-						<div id="playground">
-							<div class="icon">
-								<img class="imgdrop" src="icon/icon_playground2.svg" alt="Playground" />
-								<img class="imgdrop pauseicon" src="icon/icon_pause.svg" alt="Pause" />
-								<p class="sound">PLAYGROUND</p>
-							</div>
-							<div class="wrapper">
-								<div class="sound-volume">
-									<img src="icon/icon_sound_blue.svg" height="16px" width="16px" alt="Volume">
-									
-									<div class="sound-volume_bg"></div>
-									<div class="sound-volume_slider" id="playground-volume"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<!-- Right Scroll Button -->
-					<a href="#" data-ocarousel-link="5" class="soundscroll" id="soundscroll-right"><img src="icon/icon_right.svg" alt="Right" /></a>
-				</div>
-			
-				<!-- Nav -->
-				
-				<div id="navcontainer">
-					<nav>
-						<ul>
-							<!-- Menu Button -->
-							<li id="menu"><a href="#"><img src="icon/icon_menu.svg" alt="About" /><span>Menu</span></a>
-								<div id="menudrop">
-									<!-- Menu Sub-Nav -->
-									<div id="menunav">
-										<ul>
-											<li id="aboutbut"><p>About</p></li>
-											<li id="knowledgebut"><p>Knowledge</p></li>
-											<li id="creditsbut"><p>Credits</p></li>
-										</ul>
-									</div>
-									
-									<!-- About Body -->
-									<div id="aboutdesc">
-										<img src="icon/logo_soundrown.svg" alt="Soundrown" />
-										<p>___________</p><br>
-										<p>Soundrown was created to help individuals like you, relax and focus while you work on your daily tasks or creative aspirations.  Brought to you by a small and passionate group, interested in creating an experience for everyone to enjoy.</p>
-									</div>
-									
-									<!-- Knowledge Body -->
-									<div id="knowledgedesc">
-										<ol>
-											<li><a href="http://www.theatlantic.com/health/archive/2012/06/study-of-the-day-why-crowded-coffee-shops-fire-up-your-creativity/258742/" target="_blank"><h2>STUDY OF THE DAY:</h2><p>_____</p><br><p>Why Crowded Coffee Shops Fire Up Your Creativity</p></a></li>
-											<li><a href="http://lifehacker.com/5365012/the-best-sounds-for-getting-work-done" target="_blank"><h2>THE BEST SOUNDS:</h2><p>_____</p><br><p>For Getting Work Done</p></a></li>
-											<li><a href="http://www.mdpi.com/1660-4601/7/3/1036" target="_blank"><h2>STRESS RECOVERY:</h2><p>_____</p><br><p>During Exposure to Nature Sound and Environmental Noise</p></a></li>
-											<li><a href="http://www.apartmenttherapy.com/sleep-better-the-science-of-sound-machines-168208" target="_blank"><h2>WHITE NOISE AND YOUR BRAIN:</h2><p>_____</p><br><p>The Science of Sound Machines</p></a></li>
-										</ol>
-									</div>
-									
-									<!-- Credits Body -->
-									<div id="creditsdesc">
-									
-										<div class="nametag">
-											<div>
-												<h2>RISHI AGRAWAL</h2>
-												<p>_____</p><br>
-												<p class="role">Founder</p>
-											</div>
-											<div class="contact">
-												<a href="mailto:rishi@soundrown.com" title="rishi@soundrown.com"><img src="icon/icon_mail.svg" /></a>
-												<a href="https://twitter.com/rishim3" target="_blank" title="@rishim3"><img src="icon/icon_twitter.svg" /></a>
-											</div>
-										</div>
-										
-										<div class="nametag">
-											<div>
-												<h2>JOSEPH DECKER</h2>
-												<p>_____</p><br>
-												<p class="role">Creative</p>
-											</div>
-											<div class="contact">
-												<a href="mailto:joseph@soundrown.com" title="joseph@soundrown.com"><img src="icon/icon_mail.svg" /></a>
-												<a href="https://twitter.com/_josephdecker" target="_blank"title="@_josephdecker"><img src="icon/icon_twitter.svg" /></a>
-												<a href="http://www.josephdecker.com/" target="_blank" title="www.josephdecker.com"><img src="icon/icon_home.svg" /></a>
-											</div>
-										</div>
-										
-										<div class="nametag">
-											<div>
-												<h2>DANIEL LIN</h2>
-												<p>_____</p><br>
-												<p class="role">Developer</p>
-											</div>
-											<div class="contact">
-												<a href="mailto:daniel@soundrown.com" title="daniel@soundrown.com"><img src="icon/icon_mail.svg" /></a>
-												<a href="https://twitter.com/Chumner" target="_blank" title="@Chumner"><img src="icon/icon_twitter.svg" /></a>
-												<a href="http://www.daniel-lin.net" target="_blank" title="www.daniel-lin.net"><img src="icon/icon_home.svg" /></a>
-											</div>
-										</div>
-										
-										<div class="nametag">
-											<div>
-												<h2>NATHAN SOOHOO</h2>
-												<p>_____</p><br>
-												<p class="role">Marketing</p>
-											</div>
-											<div class="contact">
-												<a href="mailto:nathan@soundrown.com" title="nathan@soundrown.com"><img src="icon/icon_mail.svg" /></a>
-												<a href="https://twitter.com/nsoohoo" target="_blank" title="@nsoohoo"><img src="icon/icon_twitter.svg" /></a>
-											</div>
-										</div>		
-									</div>
-									
-								</div>
-							</li>
-							
-							<!-- Music Button -->
-							<li id="music"><a href="#"><img src="icon/icon_music.svg" alt="Music" /><span>Music</span></a>
-							
-								<div>
-									<div id="sc-playpause">
-										<img id="scPlay" src="icon/icon_scPlay.svg" alt="SC Play" /> 
-										<img id="scPause" src="icon/icon_scPause.svg" alt="SC Pause" />
-									</div>
+  <head>
 
-									<div id="sc-progress">
-										<div id="sc-title">Clair de lune - Debussy</div>
-										
-										<div id="sc-progress_bar_bg"></div>
-										<div id="sc-progress_bar"></div>
-										
-										<div id="sc-time">
-											<div id="sc-time_elapsed">0:00</div>
-											<div id="sc-time_total">5:58</div>
-										</div>
-									</div>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Description" content="Ambient sounds to help you relax, focus, and escape." />
+    <meta name="keywords" content="rain, ambient, train, coffee, waves, sounds, relax, focus, binaural, fountain, playground, white noise, night" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-									<div id="sc-volume">
-										<img src="icon/icon_sound.svg" alt="SC-Volume">
-										
-										<div id="sc-volume_bg"></div>
-										<div id="sc-volume_slider"></div>
-									</div>
-								</div>
-								
-								<div>
-									<div id="logo-soundcloud">
-										<a href="https://soundcloud.com/" target="_blank"><img src="icon/logo_soundcloud.png" alt="Soundcloud" /></a>
-									</div>
-									
-									<div id="search-button"><img src="icon/icon_search.svg" alt="Search" /></div>
-									
-									<form id="search-frame" onsubmit="return false;">
-										<input id="search" type="text" name="Search" placeholder="Search..." >
-										<ul id="results"></ul>
-									</form>
-								</div>
-								
-							</li>
-							
-							<!-- Random Button -->
-							<li id="random"><a href="#"><img src="icon/icon_random.svg" alt="Random" /><span>Random</span></a></li>
-							
-							<!-- Twitter Button -->
-							<li id="twitter"><a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fsoundrown.com&text=relax.+focus.+escape.&via=soundrown" target="_blank"><img src="icon/icon_twitter.svg" alt="Tweet Us" /><span>Tweet Us</span></a></li>
-							
-							<!-- Suggest Button -->
-							<li id="suggest"><a href="https://docs.google.com/spreadsheet/viewform?formkey=dFdqd3VUQnZXSFFMZFYyTWl5NFUtWVE6MQ" target="_blank"><img src="icon/icon_suggest.svg" alt="Improve Us" /><span>Improve Us</span></a></li>
-						
-						</ul>
-					</nav>
-				</div>
-				
-				<!-- Stopwatch -->
-				<span id="stopwatch">00h 00m 00s</span>
-				
-				<div id="soundcloud-player">
-				<!-- default height 166 -->
-					<iframe id="scplayer" width="900" height="0" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/73594607&color=ff932b&show_artwork=false"></iframe>
-				</div>
-	
-			</div>
-		</div>	
-		
-		<footer>
-			<!-- Adsense -->
-				<div class="ad">
-					<script type="text/javascript"><!--
-						google_ad_client = "ca-pub-5739077933952279";
-						/* New */
-						google_ad_slot = "1030414388";
-						google_ad_width = 728;
-						google_ad_height = 90;
-						//-->
-					</script>
-					<script type="text/javascript"
-						src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-					</script>
-				</div>
-			
-			<div id="copyrights"><p>Copyright &copy;2014 soundrown.com. All rights reserved. Web hosting provided by <a href="http://www.hostingblender.com/" target="_blank">hostingblender.com</a></p></div>
-		</footer>
-		
-		<!-- SCRIPTS -->
-	
-		<!-- Mobile Redirect -->
-			<script type="text/javascript">
-				if (screen.width <= 600) {
-					window.location = "http://soundrown.com/Mobile/Coffee.html";
-				}
-			</script>
-			
-		<!-- jQuery Library -->
-			<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-			<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-			<script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
-			
-		<!-- Soundcloud -->
-			<script src="https://connect.soundcloud.com/sdk.js"></script>
-			<script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
-			<script src="js/soundmanager2-jsmin.js"></script>
+    <title>soundrown</title>
+    <link href='https://fonts.googleapis.com/css?family=Gudea' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/soundrown_style.css?d2014.02.09" />
 
-		<!-- Timer Script -->
-			<script src="js/jquery.timer.js?d2014.02.09"></script>
-			
-		<!-- Soundrown Scripts -->
-			<script src="js/soundrown_script.js?d2014.02.09"></script>
-		
-		<!-- FuckItJS -->
-			<script src="js/fuckit-min.js"></script>
-			
-		<!-- Preloader -->
-			<script type="text/javascript">
-				<!--//--><![CDATA[//><!--
-					var images = new Array()
-					function preload() {
-						for (i = 0; i < preload.arguments.length; i++) {
-							images[i] = new Image()
-							images[i].src = preload.arguments[i]
-						}
-					}
-					preload(
-						"bg/coffeebg.jpg",
-						"bg/playgroundbg.jpg",
-						"bg/trainbg.jpg",
-						"bg/wavesbg.jpg",
-						"bg/rainbg.jpg",
-						"bg/nightbg.jpg",
-						"bg/fountainbg.jpg",
-						"bg/whitenoisebg.jpg",
-						"bg/firebg.jpg",
-						"bg/birdbg.jpg"
-					)
-				//--><!]]>
-			</script>
-			
-		<!-- Viewport Bug Fix-->
-			<script>
-				/*
-					VIEWPORT BUG FIX
-					iOS viewport scaling bug fix, by @mathias, @cheeaun and @jdalton
-				*/
-				(function(doc){var addEvent='addEventListener',type='gesturestart',qsa='querySelectorAll',scales=[1,1],meta=qsa in doc?doc[qsa]('meta[name=viewport]'):[];function fix(){meta.content='width=device-width,minimum-scale='+scales[0]+',maximum-scale='+scales[1];doc.removeEventListener(type,fix,true);}if((meta=meta[meta.length-1])&&addEvent in doc){fix();scales=[.25,1.6];doc[addEvent](type,fix,true);}}(document));
-			</script>
-			
-		<!-- Google Analytics -->
-			<script type="text/javascript">
-			
-			  var _gaq = _gaq || [];
-			  _gaq.push(['_setAccount', 'UA-35477640-1']);
-			  _gaq.push(['_setSiteSpeedSampleRate', 100]);
-			  _gaq.push(['_trackPageview']);
-			</script>
-		<!-- End Google Analytics -->
-		<!-- -->	
-		<!-- Google Analytics Script -->
-			<script type="text/javascript">
-			  (function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			  })();
-			  
-			  function trackUser(){
-					_gaq.push(['_trackEvent', 'Exits', 'LeavesPage']);
-				}
-				window.onbeforeunload = function(){ trackUser(); }
-			</script>
-	</body>
+  </head>
+
+  <body ondragstart="return false;" ondrop="return false;">
+
+    <!-- Splash Screen -->
+    <div id="splash">
+      <div>
+        <span><p id="splashlogo">SOUNDROWN</p></span>
+        <br><br><br><br><br>
+        <p id="splashtext">relax. focus. escape.</p>
+      </div>
+    </div>
+
+    <!-- Background -->
+    <div id="bg">
+      <div id="bgfilter"></div>
+    </div>
+
+    <!-- Main Logo -->
+    <div id="mainlogo"><img src="icon/logo_soundrown.svg" alt="SOUNDROWN" /></div>
+
+    <!-- Sounds Bar -->
+    <div id="ui-container">
+      <div id="ui-frame">
+
+        <!-- Mute Button -->
+        <div id="mute-frame"><div id="mute"><img src="icon/icon_mute.svg"><span>Mute</span></div></div>
+
+        <div class="ocarousel" data-ocarousel-wrapearly="4" data-ocarousel-period="Infinity" data-ocarousel-perscroll="5">
+
+          <!-- Left Scroll Button -->
+          <a href="#" data-ocarousel-link="0" class="soundscroll" id="soundscroll-left"><img src="icon/icon_left.svg" alt="Left" /></a>
+
+          <div class="ocarousel_window">
+            <!-- Coffee -->
+            <div id="coffee">
+              <div class="icon">
+                <img class="imgdrop" src="icon/icon_coffee.svg" alt="Coffee" />
+                <img class="imgdrop pauseicon" src="icon/icon_pause.svg" alt="Pause" />
+                <p class="sound">COFFEE SHOP</p>
+              </div>
+              <div class="wrapper">
+                <div class="sound-volume">
+                  <img src="icon/icon_sound_blue.svg" height="16px" width="16px" alt="Volume">
+
+                  <div class="sound-volume_bg"></div>
+                  <div class="sound-volume_slider" id="coffee-volume"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rain -->
+            <div id="rain">
+              <div class="icon">
+                <img class="imgdrop" src="icon/icon_rain.svg" alt="Rain" />
+                <img class="imgdrop pauseicon" src="icon/icon_pause.svg" alt="Pause" />
+                <p class="sound">RAIN</p>
+              </div>
+              <div class="wrapper">
+                <div class="sound-volume">
+                  <img src="icon/icon_sound_blue.svg" height="16px" width="16px" alt="Volume">
+
+                  <div class="sound-volume_bg"></div>
+                  <div class="sound-volume_slider" id="rain-volume"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Waves -->
+            <div id="waves">
+              <div class="icon">
+                <img class="imgdrop" src="icon/icon_waves.svg" alt="Waves" />
+                <img class="imgdrop pauseicon" src="icon/icon_pause.svg" alt="Pause" />
+                <p class="sound">WAVES</p>
+              </div>
+              <div class="wrapper">
+                <div class="sound-volume">
+                  <img src="icon/icon_sound_blue.svg" height="16px" width="16px" alt="Volume">
+
+                  <div class="sound-volume_bg"></div>
+                  <div class="sound-volume_slider" id="waves-volume"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fire -->
+            <div id="fire">
+              <div class="icon">
+                <img class="imgdrop" src="icon/icon_fire.svg" alt="Fire" />
+                <img class="imgdrop pauseicon" src="icon/icon_pause.svg" alt="Pause" />
+                <p class="sound">FIRE</p>
+              </div>
+              <div class="wrapper">
+                <div class="sound-volume">
+                  <img src="icon/icon_sound_blue.svg" height="16px" width="16px" alt="Volume">
+
+                  <div class="sound-volume_bg"></div>
+                  <div class="sound-volume_slider" id="fire-volume"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Birds -->
+            <div id="bird">
+              <div class="icon">
+                <img class="imgdrop" src="icon/icon_bird.svg" alt="Birds" />
+                <img class="imgdrop pauseicon" src="icon/icon_pause.svg" alt="Pause" />
+                <p class="sound">BIRDS</p>
+              </div>
+              <div class="wrapper">
+                <div class="sound-volume">
+                  <img src="icon/icon_sound_blue.svg" height="16px" width="16px" alt="Volume">
+
+                  <div class="sound-volume_bg"></div>
+                  <div class="sound-volume_slider" id="bird-volume"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Night -->
+            <div id="night">
+              <div class="icon">
+                <img class="imgdrop" src="icon/icon_night.svg" alt="Night" />
+                <img class="imgdrop pauseicon" src="icon/icon_pause.svg" alt="Pause" />
+                <p class="sound">NIGHT</p>
+              </div>
+              <div class="wrapper">
+                <div class="sound-volume">
+                  <img src="icon/icon_sound_blue.svg" height="16px" width="16px" alt="Volume">
+
+                  <div class="sound-volume_bg"></div>
+                  <div class="sound-volume_slider" id="night-volume"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Train -->
+            <div id="train">
+              <div class="icon">
+                <img class="imgdrop" src="icon/icon_train.svg" alt="Train" />
+                <img class="imgdrop pauseicon" src="icon/icon_pause.svg" alt="Pause" />
+                <p class="sound">TRAIN</p>
+              </div>
+              <div class="wrapper">
+                <div class="sound-volume">
+                  <img src="icon/icon_sound_blue.svg" height="16px" width="16px" alt="Volume">
+
+                  <div class="sound-volume_bg"></div>
+                  <div class="sound-volume_slider" id="train-volume"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fountain -->
+            <div id="fountain">
+              <div class="icon">
+                <img class="imgdrop" src="icon/icon_fountain.svg" alt="Fountain" />
+                <img class="imgdrop pauseicon" src="icon/icon_pause.svg" alt="Pause" />
+                <p class="sound">FOUNTAIN</p>
+              </div>
+              <div class="wrapper">
+                <div class="sound-volume">
+                  <img src="icon/icon_sound_blue.svg" height="16px" width="16px" alt="Volume">
+
+                  <div class="sound-volume_bg"></div>
+                  <div class="sound-volume_slider" id="fountain-volume"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- White Noise -->
+            <div id="whitenoise">
+              <div class="icon">
+                <img class="imgdrop" src="icon/icon_whitenoise.svg" alt="White Noise" />
+                <img class="imgdrop pauseicon" src="icon/icon_pause.svg" alt="Pause" />
+                <p class="sound">WHITE NOISE</p>
+              </div>
+              <div class="wrapper">
+                <div class="sound-volume">
+                  <img src="icon/icon_sound_blue.svg" height="16px" width="16px" alt="Volume">
+
+                  <div class="sound-volume_bg"></div>
+                  <div class="sound-volume_slider" id="whitenoise-volume"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Playground -->
+            <div id="playground">
+              <div class="icon">
+                <img class="imgdrop" src="icon/icon_playground2.svg" alt="Playground" />
+                <img class="imgdrop pauseicon" src="icon/icon_pause.svg" alt="Pause" />
+                <p class="sound">PLAYGROUND</p>
+              </div>
+              <div class="wrapper">
+                <div class="sound-volume">
+                  <img src="icon/icon_sound_blue.svg" height="16px" width="16px" alt="Volume">
+
+                  <div class="sound-volume_bg"></div>
+                  <div class="sound-volume_slider" id="playground-volume"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Scroll Button -->
+          <a href="#" data-ocarousel-link="5" class="soundscroll" id="soundscroll-right"><img src="icon/icon_right.svg" alt="Right" /></a>
+        </div>
+
+        <!-- Nav -->
+
+        <div id="navcontainer">
+          <nav>
+            <ul>
+              <!-- Menu Button -->
+              <li id="menu"><a href="#"><img src="icon/icon_menu.svg" alt="About" /><span>Menu</span></a>
+                <div id="menudrop">
+                  <!-- Menu Sub-Nav -->
+                  <div id="menunav">
+                    <ul>
+                      <li id="aboutbut"><p>About</p></li>
+                      <li id="knowledgebut"><p>Knowledge</p></li>
+                      <li id="creditsbut"><p>Credits</p></li>
+                    </ul>
+                  </div>
+
+                  <!-- About Body -->
+                  <div id="aboutdesc">
+                    <img src="icon/logo_soundrown.svg" alt="Soundrown" />
+                    <p>___________</p><br>
+                    <p>Soundrown was created to help individuals like you, relax and focus while you work on your daily tasks or creative aspirations.  Brought to you by a small and passionate group, interested in creating an experience for everyone to enjoy.</p>
+                  </div>
+
+                  <!-- Knowledge Body -->
+                  <div id="knowledgedesc">
+                    <ol>
+                      <li><a href="http://www.theatlantic.com/health/archive/2012/06/study-of-the-day-why-crowded-coffee-shops-fire-up-your-creativity/258742/" target="_blank"><h2>STUDY OF THE DAY:</h2><p>_____</p><br><p>Why Crowded Coffee Shops Fire Up Your Creativity</p></a></li>
+                      <li><a href="http://lifehacker.com/5365012/the-best-sounds-for-getting-work-done" target="_blank"><h2>THE BEST SOUNDS:</h2><p>_____</p><br><p>For Getting Work Done</p></a></li>
+                      <li><a href="http://www.mdpi.com/1660-4601/7/3/1036" target="_blank"><h2>STRESS RECOVERY:</h2><p>_____</p><br><p>During Exposure to Nature Sound and Environmental Noise</p></a></li>
+                      <li><a href="http://www.apartmenttherapy.com/sleep-better-the-science-of-sound-machines-168208" target="_blank"><h2>WHITE NOISE AND YOUR BRAIN:</h2><p>_____</p><br><p>The Science of Sound Machines</p></a></li>
+                    </ol>
+                  </div>
+
+                  <!-- Credits Body -->
+                  <div id="creditsdesc">
+
+                    <div class="nametag">
+                      <div>
+                        <h2>RISHI AGRAWAL</h2>
+                        <p>_____</p><br>
+                        <p class="role">Founder</p>
+                      </div>
+                      <div class="contact">
+                        <a href="mailto:rishi@soundrown.com" title="rishi@soundrown.com"><img src="icon/icon_mail.svg" /></a>
+                        <a href="https://twitter.com/rishim3" target="_blank" title="@rishim3"><img src="icon/icon_twitter.svg" /></a>
+                      </div>
+                    </div>
+
+                    <div class="nametag">
+                      <div>
+                        <h2>JOSEPH DECKER</h2>
+                        <p>_____</p><br>
+                        <p class="role">Creative</p>
+                      </div>
+                      <div class="contact">
+                        <a href="mailto:joseph@soundrown.com" title="joseph@soundrown.com"><img src="icon/icon_mail.svg" /></a>
+                        <a href="https://twitter.com/_josephdecker" target="_blank"title="@_josephdecker"><img src="icon/icon_twitter.svg" /></a>
+                        <a href="http://www.josephdecker.com/" target="_blank" title="www.josephdecker.com"><img src="icon/icon_home.svg" /></a>
+                      </div>
+                    </div>
+
+                    <div class="nametag">
+                      <div>
+                        <h2>DANIEL LIN</h2>
+                        <p>_____</p><br>
+                        <p class="role">Developer</p>
+                      </div>
+                      <div class="contact">
+                        <a href="mailto:daniel@soundrown.com" title="daniel@soundrown.com"><img src="icon/icon_mail.svg" /></a>
+                        <a href="https://twitter.com/Chumner" target="_blank" title="@Chumner"><img src="icon/icon_twitter.svg" /></a>
+                        <a href="http://www.daniel-lin.net" target="_blank" title="www.daniel-lin.net"><img src="icon/icon_home.svg" /></a>
+                      </div>
+                    </div>
+
+                    <div class="nametag">
+                      <div>
+                        <h2>NATHAN SOOHOO</h2>
+                        <p>_____</p><br>
+                        <p class="role">Marketing</p>
+                      </div>
+                      <div class="contact">
+                        <a href="mailto:nathan@soundrown.com" title="nathan@soundrown.com"><img src="icon/icon_mail.svg" /></a>
+                        <a href="https://twitter.com/nsoohoo" target="_blank" title="@nsoohoo"><img src="icon/icon_twitter.svg" /></a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+
+              <!-- Music Button -->
+              <li id="music"><a href="#"><img src="icon/icon_music.svg" alt="Music" /><span>Music</span></a>
+
+                <div>
+                  <div id="sc-playpause">
+                    <img id="scPlay" src="icon/icon_scPlay.svg" alt="SC Play" />
+                    <img id="scPause" src="icon/icon_scPause.svg" alt="SC Pause" />
+                  </div>
+
+                  <div id="sc-progress">
+                    <div id="sc-title">Clair de lune - Debussy</div>
+
+                    <div id="sc-progress_bar_bg"></div>
+                    <div id="sc-progress_bar"></div>
+
+                    <div id="sc-time">
+                      <div id="sc-time_elapsed">0:00</div>
+                      <div id="sc-time_total">5:58</div>
+                    </div>
+                  </div>
+
+                  <div id="sc-volume">
+                    <img src="icon/icon_sound.svg" alt="SC-Volume">
+
+                    <div id="sc-volume_bg"></div>
+                    <div id="sc-volume_slider"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div id="logo-soundcloud">
+                    <a href="https://soundcloud.com/" target="_blank"><img src="icon/logo_soundcloud.png" alt="Soundcloud" /></a>
+                  </div>
+
+                  <div id="search-button"><img src="icon/icon_search.svg" alt="Search" /></div>
+
+                  <form id="search-frame" onsubmit="return false;">
+                    <input id="search" type="text" name="Search" placeholder="Search..." >
+                    <ul id="results"></ul>
+                  </form>
+                </div>
+
+              </li>
+
+              <!-- Random Button -->
+              <li id="random"><a href="#"><img src="icon/icon_random.svg" alt="Random" /><span>Random</span></a></li>
+
+              <!-- Twitter Button -->
+              <li id="twitter"><a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fsoundrown.com&text=relax.+focus.+escape.&via=soundrown" target="_blank"><img src="icon/icon_twitter.svg" alt="Tweet Us" /><span>Tweet Us</span></a></li>
+
+              <!-- Suggest Button -->
+              <li id="suggest"><a href="https://docs.google.com/spreadsheet/viewform?formkey=dFdqd3VUQnZXSFFMZFYyTWl5NFUtWVE6MQ" target="_blank"><img src="icon/icon_suggest.svg" alt="Improve Us" /><span>Improve Us</span></a></li>
+
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Stopwatch -->
+        <span id="stopwatch">00h 00m 00s</span>
+
+        <div id="soundcloud-player">
+        <!-- default height 166 -->
+          <iframe id="scplayer" width="900" height="0" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/73594607&color=ff932b&show_artwork=false"></iframe>
+        </div>
+
+      </div>
+    </div>
+
+    <footer>
+      <!-- Adsense -->
+        <div class="ad">
+          <script type="text/javascript"><!--
+            google_ad_client = "ca-pub-5739077933952279";
+            /* New */
+            google_ad_slot = "1030414388";
+            google_ad_width = 728;
+            google_ad_height = 90;
+            //-->
+          </script>
+          <script type="text/javascript"
+            src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+          </script>
+        </div>
+
+      <div id="copyrights"><p>Copyright &copy;2014 soundrown.com. All rights reserved. Web hosting provided by <a href="http://www.hostingblender.com/" target="_blank">hostingblender.com</a></p></div>
+    </footer>
+
+    <!-- SCRIPTS -->
+
+    <!-- Mobile Redirect -->
+      <script type="text/javascript">
+        if (screen.width <= 600) {
+          window.location = "http://soundrown.com/Mobile/Coffee.html";
+        }
+      </script>
+
+    <!-- jQuery Library -->
+      <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+      <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+
+    <!-- Soundcloud -->
+      <script src="https://connect.soundcloud.com/sdk.js"></script>
+      <script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
+      <script src="js/soundmanager2-jsmin.js"></script>
+
+    <!-- Timer Script -->
+      <script src="js/jquery.timer.js?d2014.02.09"></script>
+
+    <!-- Soundrown Scripts -->
+      <script src="js/soundrown_script.js?d2014.02.09"></script>
+
+    <!-- FuckItJS -->
+      <script src="js/fuckit-min.js"></script>
+
+    <!-- Preloader -->
+      <script type="text/javascript">
+        <!--//--><![CDATA[//><!--
+          var images = new Array()
+          function preload() {
+            for (i = 0; i < preload.arguments.length; i++) {
+              images[i] = new Image()
+              images[i].src = preload.arguments[i]
+            }
+          }
+          preload(
+            "bg/coffeebg.jpg",
+            "bg/playgroundbg.jpg",
+            "bg/trainbg.jpg",
+            "bg/wavesbg.jpg",
+            "bg/rainbg.jpg",
+            "bg/nightbg.jpg",
+            "bg/fountainbg.jpg",
+            "bg/whitenoisebg.jpg",
+            "bg/firebg.jpg",
+            "bg/birdbg.jpg"
+          )
+        //--><!]]>
+      </script>
+
+    <!-- Viewport Bug Fix-->
+      <script>
+        /*
+          VIEWPORT BUG FIX
+          iOS viewport scaling bug fix, by @mathias, @cheeaun and @jdalton
+        */
+        (function(doc){var addEvent='addEventListener',type='gesturestart',qsa='querySelectorAll',scales=[1,1],meta=qsa in doc?doc[qsa]('meta[name=viewport]'):[];function fix(){meta.content='width=device-width,minimum-scale='+scales[0]+',maximum-scale='+scales[1];doc.removeEventListener(type,fix,true);}if((meta=meta[meta.length-1])&&addEvent in doc){fix();scales=[.25,1.6];doc[addEvent](type,fix,true);}}(document));
+      </script>
+
+    <!-- Google Analytics -->
+      <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-35477640-1']);
+        _gaq.push(['_setSiteSpeedSampleRate', 100]);
+        _gaq.push(['_trackPageview']);
+      </script>
+    <!-- End Google Analytics -->
+    <!-- -->
+    <!-- Google Analytics Script -->
+      <script type="text/javascript">
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+        function trackUser(){
+          _gaq.push(['_trackEvent', 'Exits', 'LeavesPage']);
+        }
+        window.onbeforeunload = function(){ trackUser(); }
+      </script>
+  </body>
 </html>
