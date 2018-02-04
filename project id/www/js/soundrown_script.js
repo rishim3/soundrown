@@ -14,86 +14,105 @@ $(document).ready(function() {
 
   //SOUNDS OBJECT
     function Sounds(sound) {
-        this.sound = sound;
-      this.soundID = "#" + sound;
-      this.soundBG = "./bg/" + sound + "bg.jpg";
+      this.sound = sound;
+      this.soundId = "#" + sound;
+      this.soundBg = "./bg/" + sound + "bg.jpg";
 
       this.soundTrigger = function () {
-        if (!$(this.soundID).hasClass('iconactive')) {
+        if (!$(this.soundId).hasClass('iconactive')) {
           $('#bg').css('background-image', 'url("' + this.soundBG + '")');
           _gaq.push(['_trackEvent', 'Sounds', 'Play', this.sound]);
-          $(this.soundID).find('.pauseicon').css('z-index', '1');
-          $(this.soundID).next('.sound-volume').show();
+          $(this.soundId).find('.pauseicon').css('z-index', '1');
+          $(this.soundId).next('.sound-volume').show();
         }
         else {
           _gaq.push(['_trackEvent', 'Sounds', 'Pause', this.sound]);
-          $(this.soundID).find('.pauseicon').css('z-index', '-1');
-          $(this.soundID).next('.sound-volume').hide();
+          $(this.soundId).find('.pauseicon').css('z-index', '-1');
+          $(this.soundId).next('.sound-volume').hide();
         }
         return false;
       }
     };
 
-  //COFFEE
-    var coffee = new Sounds("coffee");
-    $(coffee.soundID).click(function() {
-      coffee.soundTrigger();
-    });
+    var soundArray = [
+      "coffee",
+      "rain",
+      "waves",
+      "fire",
+      "bird",
+      "night",
+      "train",
+      "fountain",
+      "whitenoise",
+      "playground"
+    ];
 
-  //RAIN
-    var rain = new Sounds("rain");
-    $(rain.soundID).click(function() {
-      rain.soundTrigger();
-    });
+    for (i = 1; i < soundArray.length; i++) {
+      var sounds = new Sounds(i);
+      $(sounds.soundId).click(function() {
+        sounds.soundTrigger();
+      })
+    }
 
-  //WAVES
-    var waves = new Sounds("waves");
-    $(waves.soundID).click(function() {
-      waves.soundTrigger();
-    });
+  // //COFFEE
+  //   var coffee = new Sounds("coffee");
+  //   $(coffee.soundId).click(function() {
+  //     coffee.soundTrigger();
+  //   });
 
-  //FIRE
-    var fire = new Sounds("fire");
-    $(fire.soundID).click(function() {
-      fire.soundTrigger();
-    });
+  // //RAIN
+  //   var rain = new Sounds("rain");
+  //   $(rain.soundId).click(function() {
+  //     rain.soundTrigger();
+  //   });
 
-  //BIRDS
-    var bird = new Sounds("bird");
-    $(bird.soundID).click(function() {
-      bird.soundTrigger();
-    });
+  // //WAVES
+  //   var waves = new Sounds("waves");
+  //   $(waves.soundId).click(function() {
+  //     waves.soundTrigger();
+  //   });
 
-  //NIGHT
-    var night = new Sounds("night");
-    $(night.soundID).click(function() {
-      night.soundTrigger();
-    });
+  // //FIRE
+  //   var fire = new Sounds("fire");
+  //   $(fire.soundId).click(function() {
+  //     fire.soundTrigger();
+  //   });
 
-  //TRAIN
-    var train = new Sounds("train");
-    $(train.soundID).click(function() {
-      train.soundTrigger();
-    });
+  // //BIRDS
+  //   var bird = new Sounds("bird");
+  //   $(bird.soundId).click(function() {
+  //     bird.soundTrigger();
+  //   });
 
-  //FOUNTAIN
-    var fountain = new Sounds("fountain");
-    $(fountain.soundID).click(function() {
-      fountain.soundTrigger();
-    });
+  // //NIGHT
+  //   var night = new Sounds("night");
+  //   $(night.soundId).click(function() {
+  //     night.soundTrigger();
+  //   });
 
-  //WHITENOISE
-    var whitenoise = new Sounds("whitenoise");
-    $(whitenoise.soundID).click(function() {
-      whitenoise.soundTrigger();
-    });
+  // //TRAIN
+  //   var train = new Sounds("train");
+  //   $(train.soundId).click(function() {
+  //     train.soundTrigger();
+  //   });
 
-  //PLAYGROUND
-    var playground = new Sounds("playground");
-    $(playground.soundID).click(function() {
-      playground.soundTrigger();
-    });
+  // //FOUNTAIN
+  //   var fountain = new Sounds("fountain");
+  //   $(fountain.soundId).click(function() {
+  //     fountain.soundTrigger();
+  //   });
 
+  // //WHITENOISE
+  //   var whitenoise = new Sounds("whitenoise");
+  //   $(whitenoise.soundId).click(function() {
+  //     whitenoise.soundTrigger();
+  //   });
+
+  // //PLAYGROUND
+  //   var playground = new Sounds("playground");
+  //   $(playground.soundId).click(function() {
+  //     playground.soundTrigger();
+  //   });
 
 //NAV
   /*$('nav ul ul').hide();*/
@@ -717,7 +736,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         onready: function() {
           // COFFEE SOUNDCLOUD STREAM
           SC.stream("http://api.soundcloud.com/tracks/133634507", function(sound) {
-            $('#coffee').click(function() {
+            $(sounds.soundId).click(function() {
               sound.togglePause();
               $(this).toggleClass('iconactive');
               $('.sound-button', this).toggleClass('iconactive');
@@ -735,185 +754,185 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             });
           });
 
-          // RAIN SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634506", function(sound) {
-            $('#rain').click(function() {
-              sound.togglePause();
-              $(this).toggleClass('iconactive');
-              $('.sound-button', this).toggleClass('iconactive');
-            });
+          // // RAIN SOUNDCLOUD STREAM
+          // SC.stream("http://api.soundcloud.com/tracks/133634506", function(sound) {
+          //   $('#rain').click(function() {
+          //     sound.togglePause();
+          //     $(this).toggleClass('iconactive');
+          //     $('.sound-button', this).toggleClass('iconactive');
+          //   });
 
-            $("#rain-volume").slider({
-              orientation: "vertical",
-              min: 0,
-              max: 100,
-              value: 100,
-              range: "min",
-              slide: function(event, ui) {
-                sound.setVolume(ui.value);
-              }
-            });
-          });
+          //   $("#rain-volume").slider({
+          //     orientation: "vertical",
+          //     min: 0,
+          //     max: 100,
+          //     value: 100,
+          //     range: "min",
+          //     slide: function(event, ui) {
+          //       sound.setVolume(ui.value);
+          //     }
+          //   });
+          // });
 
-          // WAVES SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634513", function(sound) {
-            $('#waves').click(function() {
-              sound.togglePause();
-              $(this).toggleClass('iconactive');
-              $('.sound-button', this).toggleClass('iconactive');
-            });
+          // // WAVES SOUNDCLOUD STREAM
+          // SC.stream("http://api.soundcloud.com/tracks/133634513", function(sound) {
+          //   $('#waves').click(function() {
+          //     sound.togglePause();
+          //     $(this).toggleClass('iconactive');
+          //     $('.sound-button', this).toggleClass('iconactive');
+          //   });
 
-            $("#waves-volume").slider({
-              orientation: "vertical",
-              min: 0,
-              max: 100,
-              value: 100,
-              range: "min",
-              slide: function(event, ui) {
-                sound.setVolume(ui.value);
-              }
-            });
-          });
+          //   $("#waves-volume").slider({
+          //     orientation: "vertical",
+          //     min: 0,
+          //     max: 100,
+          //     value: 100,
+          //     range: "min",
+          //     slide: function(event, ui) {
+          //       sound.setVolume(ui.value);
+          //     }
+          //   });
+          // });
 
-          // FIRE SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634510", function(sound) {
-            $('#fire').click(function() {
-              sound.togglePause();
-              $(this).toggleClass('iconactive');
-              $('.sound-button', this).toggleClass('iconactive');
-            });
+          // // FIRE SOUNDCLOUD STREAM
+          // SC.stream("http://api.soundcloud.com/tracks/133634510", function(sound) {
+          //   $('#fire').click(function() {
+          //     sound.togglePause();
+          //     $(this).toggleClass('iconactive');
+          //     $('.sound-button', this).toggleClass('iconactive');
+          //   });
 
-            $("#fire-volume").slider({
-              orientation: "vertical",
-              min: 0,
-              max: 100,
-              value: 100,
-              range: "min",
-              slide: function(event, ui) {
-                sound.setVolume(ui.value);
-              }
-            });
-          });
+          //   $("#fire-volume").slider({
+          //     orientation: "vertical",
+          //     min: 0,
+          //     max: 100,
+          //     value: 100,
+          //     range: "min",
+          //     slide: function(event, ui) {
+          //       sound.setVolume(ui.value);
+          //     }
+          //   });
+          // });
 
-          // BIRDS SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634508", function(sound) {
-            $('#bird').click(function() {
-              sound.togglePause();
-              $(this).toggleClass('iconactive');
-              $('.sound-button', this).toggleClass('iconactive');
-            });
+          // // BIRDS SOUNDCLOUD STREAM
+          // SC.stream("http://api.soundcloud.com/tracks/133634508", function(sound) {
+          //   $('#bird').click(function() {
+          //     sound.togglePause();
+          //     $(this).toggleClass('iconactive');
+          //     $('.sound-button', this).toggleClass('iconactive');
+          //   });
 
-            $("#bird-volume").slider({
-              orientation: "vertical",
-              min: 0,
-              max: 100,
-              value: 100,
-              range: "min",
-              slide: function(event, ui) {
-                sound.setVolume(ui.value);
-              }
-            });
-          });
+          //   $("#bird-volume").slider({
+          //     orientation: "vertical",
+          //     min: 0,
+          //     max: 100,
+          //     value: 100,
+          //     range: "min",
+          //     slide: function(event, ui) {
+          //       sound.setVolume(ui.value);
+          //     }
+          //   });
+          // });
 
-          // NIGHT SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634511", function(sound) {
-            $('#night').click(function() {
-              sound.togglePause();
-              $(this).toggleClass('iconactive');
-              $('.sound-button', this).toggleClass('iconactive');
-            });
+          // // NIGHT SOUNDCLOUD STREAM
+          // SC.stream("http://api.soundcloud.com/tracks/133634511", function(sound) {
+          //   $('#night').click(function() {
+          //     sound.togglePause();
+          //     $(this).toggleClass('iconactive');
+          //     $('.sound-button', this).toggleClass('iconactive');
+          //   });
 
-            $("#night-volume").slider({
-              orientation: "vertical",
-              min: 0,
-              max: 100,
-              value: 100,
-              range: "min",
-              slide: function(event, ui) {
-                sound.setVolume(ui.value);
-              }
-            });
-          });
+          //   $("#night-volume").slider({
+          //     orientation: "vertical",
+          //     min: 0,
+          //     max: 100,
+          //     value: 100,
+          //     range: "min",
+          //     slide: function(event, ui) {
+          //       sound.setVolume(ui.value);
+          //     }
+          //   });
+          // });
 
-          // TRAIN SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634506", function(sound) {
-            $('#train').click(function() {
-              sound.togglePause();
-              $(this).toggleClass('iconactive');
-              $('.sound-button', this).toggleClass('iconactive');
-            });
+          // // TRAIN SOUNDCLOUD STREAM
+          // SC.stream("http://api.soundcloud.com/tracks/133634506", function(sound) {
+          //   $('#train').click(function() {
+          //     sound.togglePause();
+          //     $(this).toggleClass('iconactive');
+          //     $('.sound-button', this).toggleClass('iconactive');
+          //   });
 
-            $("#train-volume").slider({
-              orientation: "vertical",
-              min: 0,
-              max: 100,
-              value: 100,
-              range: "min",
-              slide: function(event, ui) {
-                sound.setVolume(ui.value);
-              }
-            });
-          });
+          //   $("#train-volume").slider({
+          //     orientation: "vertical",
+          //     min: 0,
+          //     max: 100,
+          //     value: 100,
+          //     range: "min",
+          //     slide: function(event, ui) {
+          //       sound.setVolume(ui.value);
+          //     }
+          //   });
+          // });
 
-          // FOUNTAIN SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634506", function(sound) {
-            $('#fountain').click(function() {
-              sound.togglePause();
-              $(this).toggleClass('iconactive');
-              $('.sound-button', this).toggleClass('iconactive');
-            });
+          // // FOUNTAIN SOUNDCLOUD STREAM
+          // SC.stream("http://api.soundcloud.com/tracks/133634506", function(sound) {
+          //   $('#fountain').click(function() {
+          //     sound.togglePause();
+          //     $(this).toggleClass('iconactive');
+          //     $('.sound-button', this).toggleClass('iconactive');
+          //   });
 
-            $("#fountain-volume").slider({
-              orientation: "vertical",
-              min: 0,
-              max: 100,
-              value: 100,
-              range: "min",
-              slide: function(event, ui) {
-                sound.setVolume(ui.value);
-              }
-            });
-          });
+          //   $("#fountain-volume").slider({
+          //     orientation: "vertical",
+          //     min: 0,
+          //     max: 100,
+          //     value: 100,
+          //     range: "min",
+          //     slide: function(event, ui) {
+          //       sound.setVolume(ui.value);
+          //     }
+          //   });
+          // });
 
-          // WHITENOISE SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634509", function(sound) {
-            $('#whitenoise').click(function() {
-              sound.togglePause();
-              $(this).toggleClass('iconactive');
-              $('.sound-button', this).toggleClass('iconactive');
-            });
+          // // WHITENOISE SOUNDCLOUD STREAM
+          // SC.stream("http://api.soundcloud.com/tracks/133634509", function(sound) {
+          //   $('#whitenoise').click(function() {
+          //     sound.togglePause();
+          //     $(this).toggleClass('iconactive');
+          //     $('.sound-button', this).toggleClass('iconactive');
+          //   });
 
-            $("#whitenoise-volume").slider({
-              orientation: "vertical",
-              min: 0,
-              max: 100,
-              value: 100,
-              range: "min",
-              slide: function(event, ui) {
-                sound.setVolume(ui.value);
-              }
-            });
-          });
+          //   $("#whitenoise-volume").slider({
+          //     orientation: "vertical",
+          //     min: 0,
+          //     max: 100,
+          //     value: 100,
+          //     range: "min",
+          //     slide: function(event, ui) {
+          //       sound.setVolume(ui.value);
+          //     }
+          //   });
+          // });
 
-          // PLAYGROUND SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634506", function(sound) {
-            $('#playground').click(function() {
-              sound.togglePause();
-              $(this).toggleClass('iconactive');
-              $('.sound-button', this).toggleClass('iconactive');
-            });
+          // // PLAYGROUND SOUNDCLOUD STREAM
+          // SC.stream("http://api.soundcloud.com/tracks/133634506", function(sound) {
+          //   $('#playground').click(function() {
+          //     sound.togglePause();
+          //     $(this).toggleClass('iconactive');
+          //     $('.sound-button', this).toggleClass('iconactive');
+          //   });
 
-            $("#playground-volume").slider({
-              orientation: "vertical",
-              min: 0,
-              max: 100,
-              value: 100,
-              range: "min",
-              slide: function(event, ui) {
-                sound.setVolume(ui.value);
-              }
-            });
-          });
+          //   $("#playground-volume").slider({
+          //     orientation: "vertical",
+          //     min: 0,
+          //     max: 100,
+          //     value: 100,
+          //     range: "min",
+          //     slide: function(event, ui) {
+          //       sound.setVolume(ui.value);
+          //     }
+          //   });
+          // });
         },
 
         ontimeout: function() {
