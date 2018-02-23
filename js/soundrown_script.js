@@ -836,7 +836,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           });
 
           // TRAIN SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634506", function(sound) {
+          SC.stream("http://api.soundcloud.com/tracks/133634504", function(sound) {
             $('#train').click(function() {
               sound.togglePause();
               $(this).toggleClass('iconactive');
