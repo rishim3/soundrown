@@ -841,15 +841,14 @@
         /* SOUNDCLOUD SEARCH */
           #logo-soundcloud {
             width: 180px;
-            padding-top: 8px;
           }
             #logo-soundcloud a {
-              height: 13px;
-              width: 64px;
+              width: 50px;
               position: relative;
             }
               #logo-soundcloud img {
                 margin: 0;
+                width: 100%;
                 overflow: visible;
               }
           #search-frame input {
