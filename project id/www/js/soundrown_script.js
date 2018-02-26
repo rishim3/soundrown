@@ -738,6 +738,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           SC.stream("http://api.soundcloud.com/tracks/133634507", function(sound) {
             $(sounds.soundId).click(function() {
               sound.togglePause();
+              sound.play({onfinish: repeatSong});
               $(this).toggleClass('iconactive');
               $('.sound-button', this).toggleClass('iconactive');
             });
@@ -754,7 +755,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             });
           });
 
-<<<<<<< HEAD:project id/www/js/soundrown_script.js
           // // RAIN SOUNDCLOUD STREAM
           // SC.stream("http://api.soundcloud.com/tracks/133634506", function(sound) {
           //   $('#rain').click(function() {
@@ -934,187 +934,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           //     }
           //   });
           // });
-=======
-          // RAIN SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634506", function(sound) {
-            $('#rain').click(function() {
-              sound.togglePause();
-              $(this).toggleClass('iconactive');
-              $('.sound-button', this).toggleClass('iconactive');
-            });
-
-            $("#rain-volume").slider({
-              orientation: "vertical",
-              min: 0,
-              max: 100,
-              value: 100,
-              range: "min",
-              slide: function(event, ui) {
-                sound.setVolume(ui.value);
-              }
-            });
-          });
-
-          // WAVES SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634513", function(sound) {
-            $('#waves').click(function() {
-              sound.togglePause();
-              $(this).toggleClass('iconactive');
-              $('.sound-button', this).toggleClass('iconactive');
-            });
-
-            $("#waves-volume").slider({
-              orientation: "vertical",
-              min: 0,
-              max: 100,
-              value: 100,
-              range: "min",
-              slide: function(event, ui) {
-                sound.setVolume(ui.value);
-              }
-            });
-          });
-
-          // FIRE SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634510", function(sound) {
-            $('#fire').click(function() {
-              sound.togglePause();
-              $(this).toggleClass('iconactive');
-              $('.sound-button', this).toggleClass('iconactive');
-            });
-
-            $("#fire-volume").slider({
-              orientation: "vertical",
-              min: 0,
-              max: 100,
-              value: 100,
-              range: "min",
-              slide: function(event, ui) {
-                sound.setVolume(ui.value);
-              }
-            });
-          });
-
-          // BIRDS SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634508", function(sound) {
-            $('#bird').click(function() {
-              sound.togglePause();
-              $(this).toggleClass('iconactive');
-              $('.sound-button', this).toggleClass('iconactive');
-            });
-
-            $("#bird-volume").slider({
-              orientation: "vertical",
-              min: 0,
-              max: 100,
-              value: 100,
-              range: "min",
-              slide: function(event, ui) {
-                sound.setVolume(ui.value);
-              }
-            });
-          });
-
-          // NIGHT SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634511", function(sound) {
-            $('#night').click(function() {
-              sound.togglePause();
-              $(this).toggleClass('iconactive');
-              $('.sound-button', this).toggleClass('iconactive');
-            });
-
-            $("#night-volume").slider({
-              orientation: "vertical",
-              min: 0,
-              max: 100,
-              value: 100,
-              range: "min",
-              slide: function(event, ui) {
-                sound.setVolume(ui.value);
-              }
-            });
-          });
-
-          // TRAIN SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634504", function(sound) {
-            $('#train').click(function() {
-              sound.togglePause();
-              $(this).toggleClass('iconactive');
-              $('.sound-button', this).toggleClass('iconactive');
-            });
-
-            $("#train-volume").slider({
-              orientation: "vertical",
-              min: 0,
-              max: 100,
-              value: 100,
-              range: "min",
-              slide: function(event, ui) {
-                sound.setVolume(ui.value);
-              }
-            });
-          });
-
-          // FOUNTAIN SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634506", function(sound) {
-            $('#fountain').click(function() {
-              sound.togglePause();
-              $(this).toggleClass('iconactive');
-              $('.sound-button', this).toggleClass('iconactive');
-            });
-
-            $("#fountain-volume").slider({
-              orientation: "vertical",
-              min: 0,
-              max: 100,
-              value: 100,
-              range: "min",
-              slide: function(event, ui) {
-                sound.setVolume(ui.value);
-              }
-            });
-          });
-
-          // WHITENOISE SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634509", function(sound) {
-            $('#whitenoise').click(function() {
-              sound.togglePause();
-              $(this).toggleClass('iconactive');
-              $('.sound-button', this).toggleClass('iconactive');
-            });
-
-            $("#whitenoise-volume").slider({
-              orientation: "vertical",
-              min: 0,
-              max: 100,
-              value: 100,
-              range: "min",
-              slide: function(event, ui) {
-                sound.setVolume(ui.value);
-              }
-            });
-          });
-
-          // PLAYGROUND SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634506", function(sound) {
-            $('#playground').click(function() {
-              sound.togglePause();
-              $(this).toggleClass('iconactive');
-              $('.sound-button', this).toggleClass('iconactive');
-            });
-
-            $("#playground-volume").slider({
-              orientation: "vertical",
-              min: 0,
-              max: 100,
-              value: 100,
-              range: "min",
-              slide: function(event, ui) {
-                sound.setVolume(ui.value);
-              }
-            });
-          });
->>>>>>> master:js/soundrown_script.js
         },
 
         ontimeout: function() {
