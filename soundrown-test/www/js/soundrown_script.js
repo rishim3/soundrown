@@ -670,7 +670,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       $('#search-button').click(function() {
         var searchInput = document.getElementById("search").value;
       // GET API AND SEARCH INPUT AND APPEND TO TRACK LIST
-        SC.get('http://api.soundcloud.com/tracks', { q: searchInput }, function(tracks) {
+        SC.get('https://api.soundcloud.com/tracks', { q: searchInput }, function(tracks) {
         // REMOVES RESULTS LIST ITEMS
           $('#results li').remove();
         // ITERATES ON EACH TRACK OBJECT
@@ -718,7 +718,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         onready: function() {
 
           // COFFEE SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634507", function(sound) {
+          SC.stream("https://api.soundcloud.com/tracks/133634507", function(sound) {
             var soundCloudID = "#coffee";
             $(soundCloudID).click(function() {
               if ( $(soundCloudID).hasClass('play')) {
@@ -756,7 +756,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           });
 
           // RAIN SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634506", function(sound) {
+          SC.stream("https://api.soundcloud.com/tracks/133634506", function(sound) {
             var soundCloudID = "#rain";
             $(soundCloudID).click(function() {
               if ( $(soundCloudID).hasClass('play')) {
@@ -794,7 +794,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           });
 
           // WAVES SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634513", function(sound) {
+          SC.stream("https://api.soundcloud.com/tracks/133634513", function(sound) {
             var soundCloudID = "#waves";
             $(soundCloudID).click(function() {
               if ( $(soundCloudID).hasClass('play')) {
@@ -832,7 +832,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           });
 
           // FIRE SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634510", function(sound) {
+          SC.stream("https://api.soundcloud.com/tracks/133634510", function(sound) {
             var soundCloudID = "#fire";
             $(soundCloudID).click(function() {
               if ( $(soundCloudID).hasClass('play')) {
@@ -870,7 +870,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           });
 
           // BIRDS SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634508", function(sound) {
+          SC.stream("https://api.soundcloud.com/tracks/133634508", function(sound) {
             var soundCloudID = "#bird";
             $(soundCloudID).click(function() {
               if ( $(soundCloudID).hasClass('play')) {
@@ -908,7 +908,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           });
 
           // NIGHT SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634511", function(sound) {
+          SC.stream("https://api.soundcloud.com/tracks/133634511", function(sound) {
             var soundCloudID = "#night";
             $(soundCloudID).click(function() {
               if ( $(soundCloudID).hasClass('play')) {
@@ -946,7 +946,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           });
 
           // TRAIN SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634504", function(sound) {
+          SC.stream("https://api.soundcloud.com/tracks/133634504", function(sound) {
             var soundCloudID = "#train";
             $(soundCloudID).click(function() {
               if ( $(soundCloudID).hasClass('play')) {
@@ -984,7 +984,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           });
 
           // FOUNTAIN SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634506", function(sound) {
+          SC.stream("https://api.soundcloud.com/tracks/415247925", function(sound) {
             var soundCloudID = "#fountain";
             $(soundCloudID).click(function() {
               if ( $(soundCloudID).hasClass('play')) {
@@ -1022,7 +1022,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           });
 
           // WHITENOISE SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634509", function(sound) {
+          SC.stream("https://api.soundcloud.com/tracks/133634509", function(sound) {
             var soundCloudID = "#whitenoise";
             $(soundCloudID).click(function() {
               if ( $(soundCloudID).hasClass('play')) {
@@ -1060,7 +1060,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           });
 
           // PLAYGROUND SOUNDCLOUD STREAM
-          SC.stream("http://api.soundcloud.com/tracks/133634506", function(sound) {
+          SC.stream("https://api.soundcloud.com/tracks/415247904", function(sound) {
             var soundCloudID = "#playground";
             $(soundCloudID).click(function() {
               if ( $(soundCloudID).hasClass('play')) {
