@@ -984,7 +984,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           });
 
           // FOUNTAIN SOUNDCLOUD STREAM
-          SC.stream("https://api.soundcloud.com/tracks/133634506", function(sound) {
+          SC.stream("https://api.soundcloud.com/tracks/415247925", function(sound) {
             var soundCloudID = "#fountain";
             $(soundCloudID).click(function() {
               if ( $(soundCloudID).hasClass('play')) {
@@ -1060,7 +1060,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           });
 
           // PLAYGROUND SOUNDCLOUD STREAM
-          SC.stream("https://api.soundcloud.com/tracks/133634506", function(sound) {
+          SC.stream("https://api.soundcloud.com/tracks/415247904", function(sound) {
             var soundCloudID = "#playground";
             $(soundCloudID).click(function() {
               if ( $(soundCloudID).hasClass('play')) {
